@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component'
+import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 
 
 @Component({
@@ -8,7 +9,8 @@ import { HomeComponent } from './pages/home/home.component'
   standalone: true,
   imports: [
     RouterOutlet,
-    HomeComponent
+    HomeComponent,
+    MenuBarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
