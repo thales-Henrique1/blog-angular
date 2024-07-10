@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ficha-tecnica',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './ficha-tecnica.component.css'
 })
 export class FichaTecnicaComponent {
-
+  descricao_processador:string ="AMD Ryzen™ 5 7520U com Radeon™ Graphics"
+  @Input()
+  descricao_assistencia_tecnica:string =""
 }
+/**/
