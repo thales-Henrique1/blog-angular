@@ -1,0 +1,15 @@
+<div class="big-card-container">
+    <div class="big-card-imagem">
+      <img 
+        *ngFor="let image of images; let i = index"
+        [src]="image"
+        [alt]="'Imagem ' + (i + 1)"
+        [class.active]="i === currentIndex"
+      >
+    </div>
+    <div class="navigation">
+      <div class="prev" (click)="prevImage()">&#10094;</div>
+      <div class="next" (click)="nextImage()">&#10095;</div>
+    </div>
+  </div>
+  

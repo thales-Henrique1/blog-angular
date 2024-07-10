@@ -1,0 +1,16 @@
+
+.articles-othres-main{
+    width: 100%;
+}
+
+.articles-others{
+    width: 100%;
+}
+.display-flex{
+    display: flex;
+}
+.articles-principal{
+    justify-content: center;
+    display: flex;
+
+}

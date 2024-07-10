@@ -1,0 +1,36 @@
+.big-card-container {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .big-card-imagem img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .big-card-imagem img.active {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .navigation div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+
+  }

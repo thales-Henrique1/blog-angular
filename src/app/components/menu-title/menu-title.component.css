@@ -1,0 +1,9 @@
+hr{
+    background-color: rgba(0, 0, 0, 0.315);
+    color: rgba(0, 0, 0, 0.301);;
+    height: 2px;
+    border: none;
+}
+.menu-title-container{
+    text-align: center;
+}

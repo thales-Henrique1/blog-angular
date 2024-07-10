@@ -1,0 +1,14 @@
+*{
+    justify-content: center;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.display-flex{
+    display: flex;
+}
+.display-flex > a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
