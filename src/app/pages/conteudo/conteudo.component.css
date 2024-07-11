@@ -1,3 +1,28 @@
-*{
+.voltar > a {
+    margin-bottom: 20px;
+    text-decoration: none;
     color: white;
-}
+  }
+
+  
+  .img {
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center; 
+
+  }
+  
+  .img > img {
+    width: 30%;
+    height: auto;
+  }
+  
+  .conteudo-container p {
+    transition: color 0.3s ease;
+  }
+  
+  .conteudo-container:hover .img {
+    transform: scale(1.1);
+  }
+  
+ 

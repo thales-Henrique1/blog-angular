@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import path from 'path';
 import{ ConteudoComponent } from './pages/conteudo/conteudo.component'
 import { HomeComponent } from './pages/home/home.component';
 

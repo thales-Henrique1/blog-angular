@@ -11,7 +11,7 @@ import { dataFake } from '../data/dataFake';
   templateUrl: './conteudo.component.html',
   styleUrls: ['./conteudo.component.css']
 })
-export class ConteudoComponent implements OnInit {
+export class ConteudoComponent {
   descricao: string = "";
   photoCover: string = "";
   private id: string | null = "0";
@@ -23,17 +23,17 @@ export class ConteudoComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(
       value => {
-        this.id = value.get("id");
+        this.id = value.get("Id");
         this.setValuesToComponent(this.id);
       }
     );
   }
 
   setValuesToComponent(id: string | null): void {
-    const result = dataFake.find(article => article.id === id);
+    const result = dataFake.filter(article => article.Id === id);
     if (result) {
-      this.descricao = result.descricao;
-      this.photoCover = result.photoCover;
+      this.descricao = result[0].descricao;
+      this.photoCover = result[0].photoCover;
     }
   }
 }
